@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent default margin/padding and horizontal scroll */
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the video behind other content */
+}
+
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#ho{
+    margin: 20px;
+}
+main {      
+    flex: 1;
+    position: relative; /* 추가 */
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+ nav, main {
+    margin: 20px;
+    /* border: 1px solid #ddd; */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section.blog-post {
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: white;
+    opacity: 0.7;
+}
+  
+/* 테이블 행 */
+th, td {
+    text-align: center;
+    height: 70px; /* Adjust the height value as needed */
+    border: 1px solid navy;
+    border-left: none;
+    border-right: none;
+}
+
+th {
+    background-color: #1b1b1b;
+    color: #ddd;    
+}
+/* 테이블 올렸을 때 */
+tbody tr:hover {
+    background-color: gray;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* 테이블 비율 */
+th:nth-child(1),
+td:nth-child(1) {
+    width: 15%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 15%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 15%;
+}
+/* .bg{
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+}
+video{
+    width: 100%;
+} */

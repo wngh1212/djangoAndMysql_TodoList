@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>  
+    <div class="bg">
+        <video muted autoplay loop>
+            <source src="{% static 'pexels-cottonbro-9694807 (Original).mp4' %}" type="video/mp4">
+        </video>
+    </div>
+            <h1 id="ho">블로그</h1>
+ 
+
+    <nav>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">카테고리</a></li>
+            <li><a href="#">태그</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="blog-post">
+            <table>
+                <thead>
+                  <tr>
+                    <th>게시물번호</th>
+                    <th>제목</th>   
+                    <th>작성날짜</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for post in Post %}
+                  <tr>
+                    <td>{{ post.postnum }}</td>
+                    <td>{{ post.posttitle }}</td>
+                    <td>{{ post.postdate|date:"Y-m-d" }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>  
+        </section>
+    </main>
+
+    <footer>
+        <p>this blog was made by KangJuHo</p>
+    </footer>
+</body>
+</html>
