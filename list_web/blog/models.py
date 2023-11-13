@@ -131,3 +131,11 @@ class Posts(models.Model):
     class Meta:
         managed = False
         db_table = 'posts'
+
+class userinfo(models.Model):
+    userid = models.CharField(primary_key=True,max_length=50)
+    userpwd = models.CharField(max_length=50)
+
+    class Meta:
+        managed = False
+        db_table = 'userinfo'

@@ -8,18 +8,19 @@
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>  
-    <div class="bg">
+    <!-- <div class="bg">
         <video muted autoplay loop>
             <source src="{% static 'pexels-cottonbro-9694807 (Original).mp4' %}" type="video/mp4">
         </video>
-    </div>
+    </div> -->
             <h1 id="ho">블로그</h1>
  
 
     <nav>
         <ul>
             <li><a href="#">홈</a></li>
-            <li><a href="#">카테고리</a></li>
+            <li><a href="{% url 'login' %}">로그인</a></li>
+            <!-- login시에 session 발급 session이 없으면 내용조회 불가 (permission denied) -->
             <li><a href="#">태그</a></li>
             <li><a href="#">연락처</a></li>
         </ul>
