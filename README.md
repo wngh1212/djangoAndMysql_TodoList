@@ -16,4 +16,8 @@ mysql DB내용만 뽑아낸 상태,기본 테이블의 게시물번호는 자동
 <img width="458" alt="스크린샷 2023-11-13 11 18 00" src="https://github.com/wngh1212/djangoAndMysql_blog/assets/88926634/79314096-91e8-4ef8-bbe1-74590e2d1ece">
 <br>
 <img width="438" alt="스크린샷 2023-11-12 15 48 55" src="https://github.com/wngh1212/djangoAndMysql_blog/assets/88926634/dfb66436-1b3b-48a5-9e1b-412ab7d4ef10"><br>
+<img width="205" alt="스크린샷 2023-11-14 22 07 08" src="https://github.com/wngh1212/djangoAndMysql_blog/assets/88926634/e9cef83c-78b5-464a-9e48-51fdb8577f3d"><br>
+<img width="297" alt="스크린샷 2023-11-14 22 07 00" src="https://github.com/wngh1212/djangoAndMysql_blog/assets/88926634/c5bf1f9a-d9a1-44df-8d1a-8afcf3d1597a">
+
+
 
