@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+    <script src="{% static 'ro.js' %}"></script>
+
 </head>
 <body>  
 
             <h1 id="ho">블로그</h1>
  
 
-    <nav>
-        <ul>
-            <li><a href="{%url 'index' %}">홈</a></li>
-            <li><a href="#">카테고리</a></li>
-            <li><a href="#">태그</a></li>
-            <li><a href="#">연락처</a></li>
-        </ul>
-    </nav>
+   
 
     <main>
         <section class="blog-post">
-     
+            {% block content %}
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="id를 입력해주세요"><br>
+                <input type="password" name="password" placeholder="비밀번호 입력" class="pwd"><br>
+                <input type="checkbox" class="change"><span>비밀번호 확인하기</span><br>
+                <input type="submit" value="로그인">
+                <input type="button" value="돌아가기" onclick="window.history.back()">
+            </form>
+            {% endblock %}
         </section>
     </main>
 
