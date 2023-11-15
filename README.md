@@ -1,4 +1,4 @@
-# djangoAndMysql_blog
+# djangoAndMysql_TodoList
 11/12<br>
 테이블 설계 및 출력<br>
 mysql DB내용만 뽑아낸 상태,기본 테이블의 게시물번호는 자동 증가로 지정
