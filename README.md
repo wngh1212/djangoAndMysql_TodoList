@@ -11,7 +11,6 @@ mysql DB내용만 뽑아낸 상태,기본 테이블의 게시물번호는 자동
 11/14 <br>login form 생성 및 체크 박스로 password 입력 값 보일지 말지 선택
 로그인 이후 index로 이동<br>
 에러사항 : 로그인 여부에 따라 html 변경이 안됨,로그인 실패 시에만 알림창을 띄워야하는데 접근과 동시에 알림창이 계속해서 뜸<br><br>
-11/21<br>11/14일자 에러사항 해결
 <details>
 	<summary>이미지 보기</summary>
   	<div markdown="1">
