@@ -14,6 +14,8 @@ mysql DB내용만 뽑아낸 상태,기본 테이블의 게시물번호는 자동
 11/29<br>
 login form 제작<br>
  - 토글 버튼으로 비밀번호 보여짐 가림 변경 input 및 버튼 호버시 box-shadow를 통해 시각적 변형
+12/11<br>
+login,logout 기능 구현(세션상태에 따라 HTML 변경)
 <details>
 	<summary>이미지 보기</summary>
   	<div markdown="1">
