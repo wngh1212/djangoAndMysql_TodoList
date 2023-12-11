@@ -4,6 +4,8 @@ from django.contrib.auth.views import LoginView as DjangoLoginView
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
 from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth import logout as auth_logout
+
 
 
 def index(request):
@@ -26,4 +28,6 @@ def login(request):
     
 
     return render(request, 'login.html')
-
+def logout(request):
+    auth_logout(request)
+    return redirect('index')
