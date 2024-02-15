@@ -1,20 +1,20 @@
 # djangoAndMysql_TodoList
-11/12<br>
+<br>
 테이블 설계 및 출력<br>
 mysql DB내용만 뽑아낸 상태,기본 테이블의 게시물번호는 자동 증가로 지정
 <br>DB의 시스템 날짜를 자동으로 추가되게 하고 html 템플릿의 django 기본템플릿으로 테이터 출력 포맷 지정
+
 <br>
+<br>login Url연결 및 디자인 변경
+
 <br>
-11/13 <br>login Url연결 및 디자인 변경
-<br>
-<br>
-11/14 <br>login form 생성 및 체크 박스로 password 입력 값 보일지 말지 선택
+ <br>login form 생성 및 체크 박스로 password 입력 값 보일지 말지 선택
 로그인 이후 index로 이동<br><br
-11/29<br>
+<br>
 login form 제작<br>
  - 토글 버튼으로 비밀번호 보여짐 가림 변경 input 및 버튼 호버시 box-shadow를 통해 시각적 변형<br>
 
-12/11<br>
+<br>
  - login,logout 기능 구현(세션상태에 따라 HTML 변경)
 <details>
 	<summary>이미지 보기</summary>
